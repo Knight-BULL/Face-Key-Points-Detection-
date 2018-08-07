@@ -31,4 +31,6 @@ Face Key Point Detection  On Win10 With Cafe And VS2015
 
 # 备注：
 1.caffe中要求1个hdf5文件大小不超过2GB，所以如果数据量太大，建议生成多个hdf5文件。
-
+2.create_hdf5
+3.picture_mark是用来在图片标注的
+4.需要数据集的可以联系我，已经上传到百度云。
