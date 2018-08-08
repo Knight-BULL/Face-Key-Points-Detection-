@@ -31,6 +31,15 @@ Face Key Point Detection  On Win10 With Cafe And VS2015
 
 # 备注：
 ### 1.caffe中要求1个hdf5文件大小不超过2GB，所以如果数据量太大，建议生成多个hdf5文件。
-### 2.create_hdf5
+### 需要注意的是Caffe中HDF的DataLayer不支持transform，所以数据存储前就提前进行了减去均值的步骤
+### 2.验证测试集时候把train_val_net.prototxt的两个data layer替换成input_shape，然后去掉最后一层EuclideanLoss就可以了，
+     input_shape定：
+     input: "data"
+     input_shape{
+       dim: 1
+       dim: 1
+       dim: 40
+       dim: 40
+     }
 ### 3.picture_mark是用来在图片标注的
 ### 4.需要数据集的可以联系我，已经上传到百度云。
