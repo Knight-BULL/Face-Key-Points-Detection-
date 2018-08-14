@@ -87,9 +87,10 @@ Face Key Point Detection  On Win10 With Cafe And VS2015
     *Version：v1.3 ：1.输入标注文件和图片直接给出预测值和标注好的图片
                         2.实现连续多张图片的预测
                         
-    对比python而言，c++修改源码工作量还是比较大的。
-*   尤其是不同数据格式之间的转换，Vector<>容器和string之间转换，在python中有split()函数，c++中没有需要使用string类的一些函数实现，
-*   这给工作带来了一定的麻烦。其中关于std命名空间的使用会与caffe的命名空间存在冲突。
+    对比python而言，c++修改源码工作量还是比较大的。尤其是不同数据格式之间的转换，Vector<>容器和string之间转换，在python中有split()函数，
+    c++中没有需要使用string类的一些函数实现，这给工作带来了一定的麻烦。其中关于std命名空间的使用会与caffe的命名空间存在冲突。
+### 7.DataAugument
+      数据增强程序
 ## 备注
 ### 需要数据集的可以联系我，已经上传到百度云。
 
